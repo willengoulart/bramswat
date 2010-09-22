@@ -1,0 +1,41 @@
+Olá!
+
+Provavelmente, se você está lendo este arquivo é porque conseguiu clonar o repositório. Parabéns!
+
+Antes de fazer os passos abaixo, execute esses comando (que eu já mandei no e-mail):
+    Comandos obrigatórios
+        git config --global user.name "Bozo"
+        git config --global user.email "bozo@devdevdev.com"
+    Comandos utilíssimos
+        git config color.ui true
+        git config --global core.editor vim
+
+Para isso aqui não virar uma meleca total, vamos fazer o seguinte.
+    Dá uma olhadinha:
+        $ git status
+    Crie uma pasta com o seu nome/nick e coloque seus arquivos temporários de trabalho lá.
+        Eu já criei a minha!
+    Olha de novo:
+        $ git status
+    Adicione sua pasta toda ao repositório:
+        $ git add nome_da_pasta (serve para adicionar arquivos também)
+        $ git status (já percebeu que é bom usar git status sempre, neh?)
+    Faça seu primeiro commit:
+        $ git commit -a (eu sempre uso -a, dá uma olhada no help para entender umas coisas)
+        Escreva uma mensagem de commit explicativa
+    Olha que legal, seu commit entrou no histórico:
+        $ git log
+    Agora você está um commit na frente de todo mundo:
+        $ git status
+    Mande seu commit pro repositório central
+        origin = repositório de origem
+        master = branch principal de desenvolvimento (mais pra frente vamos ter que fazer coisas em branches separados)
+        Quando vamos juntar coisas, sempre corremos o risco de haver conflitos com coisas que alguém já colocou lá.
+        Nesse início, muito provavelmente esses 2 comandos vão dar conta do recado.
+        $ git pull origin master (pega modificações)
+        $ git push origin master (manda suas modificações)
+
+    Quando fizermos nossas reuniões vamos alinhando e juntando as coisas na pasta principal.
+ 
+
+Abraços, André  :)
