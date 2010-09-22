@@ -1,0 +1,87 @@
+PRECISA ARRUMAR AS SETAS NO DESENHO!!!
+
+Importante:
+ -  Todos os Use Cases abaixo requerem que os usuários envolvidos estejam logados (=>Uc[Ref: LOGIN WORLD???])
+ -  Nas descrições que seguem tanto usuários donos quanto interessados podem fazer o papel
+    de usuário A ou usuário B
+
+Uc100.1 - Usuário Interessado em obter algum exemplar
+Envolvidos: usuário interessado
+ 1  Usuário faz busca pelo item que está procurando (=>Uc[Ref: GOOGLE WORLD])
+ 2  Acessa a lista de exemplares do item que procurou
+    2.1  Se encontrou inicia negociação (=>Uc100.3)
+    2.2  Se não encontrou, então cadastra negociação (=>Uc[Ref: CADASTRO WORLD])
+         2.2.1  Entra em espera por outro usuário para dar continuidade a negociação (=>Uc100.3-2)
+
+Uc100.2 - Baixar Documento Eletrônico
+Envolvidos: usuário interessado
+ 1  Usuário busca pelo item que está interessado (=>Uc100.1)
+ 2  Usuário seleciona um exmplar
+ 3  Usuário clica para fazer o download do arquivo
+ 4  É mostrado ao usuário um termo de uso do exemplar e seus copyrights
+ 5  Usuário deve clicar em um botão dizendo que aceita os termos de uso
+ 6  O sistema inicia a transferência do arquivo para o usuário
+
+Uc100.3 - Início da negociação de venda, empréstimo ou doação
+Envolvidos: usuário interessado, usuário dono
+ 1  Usuário A (=>Uc[Ref: CADASTRO WORLD] cadastra negociação) que denota sua situação (tem/procura exemplar)
+ 2  Usuário A aguarda aparecer um usuário B que complete os dados da negociação
+ 3  Usuário B comunica o usuário A de seu interesse em iniciar a negociação
+ 4  Usuário A aceita ou não negociar com B
+    4.1  se sim, o sistema altera o estado do exemplar para indisponível e, então, uma
+         negociação pode ser iniciada
+    4.2  se não, volta-se ao estado 2
+
+Uc100.4 - Envio de mensagem de negociação
+Envolvidos: usuário remetente, usuário destinatário
+ 1  O remetente navega até a página de negociação
+ 2  Remetente pode ver o histórico de conversa sobre aquela negociação
+ 3  Logo abaixo do histórico de mensagens, o remetente pode preencher uma nova mensagem
+ 4  Remetente clica para enviar mensagem, que por sua vez já aparece no histórico
+ 5  Sistema notifica destinatário enviando-lhe um e-mail
+
+Uc100.5 - Acordo entre envolvidos em uma negociação
+Envolvidos: usuário interessado, usuário dono
+ 1  Dada uma certa negociação iniciada (=>Uc100.3)
+ 2  Usuários entram em acordo sobre as condições de negociação:
+    2.1  Podem ocorrer várias iterações de conversa pelo sistema (=>Uc100.4)
+    2.2  Dados da negociação (preço, meses empréstimo, etc...) podem ser alterados
+ 3  Se não houver acordo, qualquer um dos usuários pode cancelar a negociação e então
+    volta-se ao estado 2 do Uc100.3 (=>Uc100.3-2)
+ 4  Havendo acordo, são preenchidas as informações sobre data e local da troca (e destroca no
+    caso de a negociação se tratar de um empréstimo)
+ 5  Ambos usuários confirmam informações sobre troca/destroca
+
+Uc100.6 - Finalização de negociação
+Envolvidos: usuário interessado, usuário dono
+ Ambos usuários dão seu parecer sobre a conclusão da negociação. Que consiste em:
+ 1  Preencher o status final da negociação
+    1.1  Negociação Ok
+    1.2  Negociação Falhou
+ 2  E um comentário geral sobre a negociação e o comportamento do outro usuário
+ 3  Se ambos os status inseridos são Ok então o status da negociação e guardado como Ok.
+    Caso contrário é guardado como Falhou.
+
+Uc100.7 - Venda de exemplar
+Envolvidos: usuário interessado, usuário dono
+ 1  Usuários envolvidos iniciam negociação (=>Uc100.3)
+ 2  Entram em acordo sobre detalhes de negociação e troca (=>Uc100.5)
+ 3  Troca in loco
+ 4  Usuários finalizam a negociação (=>Uc100.6)
+ 
+Uc100.8 - Doação de exemplar
+Envolvidos: usuário interessado, usuário dono
+ 1  Uma doação nada mais é do que uma venda de custo 0 (=>Uc100.7)
+
+Uc100.9 - Empréstimo de exemplar
+Envolvidos: usuário interessado, usuário dono
+ 1  Usuários envolvidos iniciam negociação (=>Uc100.3)
+ 2  Entram em acordo sobre detalhes de negociação e troca e destroca (=>Uc100.5)
+ 3  Troca in loco
+ 4  Possível sinalização de negociação com falha (caso haja problema nessa 1ª troca).
+    Somente com falha! Trata-se de uma variação da finalização (=>Uc100.6)
+ 5  Usuários podem manter comunicação durante o período de empréstimo através de várias
+    trocas de mensagens (=>Uc100.5)
+ 6  Destroca in loco
+ 7  Usuários finalizam a negociação (=>Uc100.6)
+

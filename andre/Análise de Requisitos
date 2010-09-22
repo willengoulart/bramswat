@@ -1,0 +1,90 @@
+O sistema deve:
+
+1.1 Ter uma forma de o usuário se cadastrar: - segurança baseada no email USP
+
+                                             - requer (base de dados de possíveis alunos)¹
+
+                                             - aceitação do termo de compromisso
+                                              
+                                             - o cadastro nunca é desfeito
+
+1.2 Possibilitar ao (instalador)²  do sistema na unidade, uma forma de cadastrar informações específicas daquela unidade(sigla, telefone, endereço...)
+
+
+2 vide 1.1 
+
+3 Cadastro de itens a serem disponibilizados para o usuário: - nome , descrição[foto], autor (obrigatório, [opcional])
+
+                                                             - valor do material
+
+4.1 Fornecer uma forma de um usuário (cadastrado), procurar por um (item disponível)³¹
+
+4.2 Ou anunciar que necessita de certo item(cadastrado ou não) com certo tipo de transação
+
+5.1 Manter (histórico)⁴ de (negociações)⁶
+
+5.2 Manter (status de negociações)⁵ não encerradas
+
+6 Somente iniciar uma negociação(e consequentemente indisponibilizar o exemplar) após uma aceitação da "parte requisitada" by Ana. xD
+
+7 Fazer um diagrama
+
+8 Ter um meio de comunicação privado entre usuários que estão ou não em negociação(qualquer tipo) e guardá-la para SEMPRE.
+
+9 Punir usuários envolvidos em muitas negociações sem sucesso (inclusive desistencia), mas casa infração terá um peso.
+
+10.1 Possibilitar qualquer mudança nos possíveis tipos de negociações a serem feitas com determinado exemplar(estando este em negociação aberta ou não):
+
+                          |Exemplar| Negociação             
+        __________________|________|______________
+        Exemplar fora de  |        | 
+        negociação        |   OK   |  OK
+        __________________|________|______________
+        Exemplar em       |        | 
+        negociação        |   X    |  OK
+        __________________|________|______________
+                          |        |
+
+10.2 Possibilitar mudanças específicas do exemplar(descrição física) somente se o mesmo não estiver em negociação aberta
+
+11 Avisar usuários por email quando houver algum evento( em negociação ou mensagens)
+
+
+EXTRAS :
+
+12 Lista de espera para empréstimo
+
+13 Boas práticas de usao no email ao fazer o cadastro
+
+14 Permitir aos usuários marcar conteúdo como inapropriado
+
+
+
+Termos de Uso: - adicionar copyright
+               -
+
+Use-Cases
+
+ Atores:
+          1. Instalador
+          2. Usuário 
+          3. Administrador
+
+GLOSSÁRIO: 1 : Construção de uma tabela de verificação para o BD.( NºUSP/email)
+
+           2 : Funcionário que atualiza o BD
+
+           3.1 : item = material(livro, apostila, código...)
+
+           3.2 : exemplares ficam disponíveis ou não, itens cadastrados ou não
+
+           4 : registro de todas as negociações ocorridas com um usuário(verificação de idoneidade) OK/FAIL + comment
+
+           5 : estado atual de uma negociações
+
+           6 :  1. inicia
+                2. acordo das partes
+                3. troca in loco
+                4. finalização     
+
+Obs : Tratar o caso de ex-aluno

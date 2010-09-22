@@ -1,0 +1,7 @@
+Importante:
+ -  Todos os Use Cases abaixo requerem que os usuários envolvidos estejam logados (=>Uc[Ref: LOGIN WORLD???])
+ -  Nas descrições que seguem tanto usuários donos quanto interessados podem fazer o papel
+    de usuário A ou usuário B
+
+
+

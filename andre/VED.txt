@@ -1,0 +1,53 @@
+Itens Possíveis|   V |  E  |  D |
+---------------+-----+-----+----|
+Livro          |  x  |  x  |  x |
+Apostila       |  x  |  x  |  x |
+Caderno        |  x  |  x  |  X |
+Doc Eletrônico |     |     |  x | [Código, Prova, Listas, Tutorial, Artigo...]
+---------------+-----+-----+----+
+
+
+
+Negociação
+
+Dono                   |   Interesssado
+-----------------------+-----------------
+Exemplar               |   Item 
+Dados Negociação       |   =
+Info troca(Data Local) |   = 
+Conversa               |   =
+OK/Fail+comment        | 
+
+
+Nível 0:
+	Usuário A cadastra sua situação(tem/procura)
+
+Nível 1:
+	Usuário A aguarda aparecer um usuário B interessado
+
+Nível 2:
+	Usuário B comunica o A de seu interesse em iniciar a transação
+
+Nível 3:
+	Usuário A aceita ou não negociar com B
+		- se sim, goto 4
+		- se não, goto 1
+
+Nível 4:
+	Acordo(conversa, modificações, dados negociação(preço, meses empréstimo), dados da troca(local da troca))
+		- houve acordo, goto 5
+		- não houve acordo, goto 1
+
+Nível 5:
+	Troca in Loco e possível destroca in Loco
+
+Nível 6:
+	Comunicação
+
+Nível 7:
+	Finalização - [tratar de acordo com o tipo de documento]
+		- OK -> descadastrar exemplar
+		- Fail)+comment
+
+
+
