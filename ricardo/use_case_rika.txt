@@ -1,0 +1,47 @@
+Contém:
+- Administrador adiciona item.
+- Usuário denúncia conteúdo impróprio
+- Usuário pede ajuda.
+
+Glossário:
+- logado: já fez o login no sistema; dentro do sistema.
+- conteúdo impróprio: conteúdo que infringe os termos de uso e/ou é abusivo.
+
+*************************************************************************************
+
+Usuário denuncia conteúdo impróprio:
+
+O usuário logado, ao navegar pelo sistema, nota o cadastro de um item (ou exemplar) que em sua opinião tem um conteúdo impróprio.
+Ele marca-o como conteúdo impróprio.
+O sistema requisita uma confirmação:
+    Caso o usuário confirme o sistema envia uma notificação (e-mail) ao administrador sobre a ocorrência.
+        O administrador do sistema decidirá o que será feito.
+    Caso contrário volta a tela de em que o usuário estava.
+
+Usuário pede ajuda:
+
+O usuário, já logado no sistema, tem uma dúvida sobre o funcionamento do sistema.
+O usuário vai para área de ajuda do sistema.
+O usuário envia sua dúvida ao sistema através do próprio canal de comunicação deste.
+O sistema envia uma notificação (e-mail) ao administrador com a dúvida.
+O administrador responde ao usuário através do canal de comunicação.
+
+Administrador adiciona item:
+
+O administrador está dentro do sistema.
+Seleciona uma opção para adicionar um novo item dentro da tela do acervo.
+Na tela de adição de item:
+    Escolhe o tipo do item.
+    Completa atributos:
+        Se os eles não forem válidos, preenche de novo.
+        Senão:
+            Se o item já existe, o administrador é avisado e questionado
+            se deseja adicionar outro item:
+                Caso sim, volta à adição de item.
+                Caso contrário, volta ao acervo.
+            Se é realmente novo, o sistema requisita uma confirmação:
+                Caso seja confirmada, o item é adicionado ao acervo.
+                Caso contrário volta ao acervo.
+            Senão, volta ao acervo.
+
+*************************************************************************************
