@@ -1,0 +1,90 @@
+
+Use Cases:
+
+- Usuário entra no Sistema
+- Usuário adiciona Item
+- Usuário adiciona Exemplar
+- Usuário remove Exemplar
+- Usuário remove Negociação
+
+Glossário:
+Acervo = conjunto de itens do sistema
+Coleção = conjunto de exemplares de certo usuário
+Adiciona = Cadastra
+Remove = Descadastra
+
+- Entra no sistema:
+
+	O usuário se conecta ao sistema
+	Insere seu login e senha
+	Se forem válidos
+		ele consegue entrar na tela inicial do sistema
+	Caso contrário
+		o sistema pede o login e a senha novamente
+
+- Adiciona Item:
+
+	Usuário tem acesso ao Acervo
+	Seleciona uma opção para adicionar um novo item
+	Escolhe o tipo do item
+	Completa os atributos
+	Se forem inválidos (por exemplo, incompletos)
+		Preenche de novo
+	Caso contrário (válidos)
+		Se o item já existe
+			O usuário é avisado e questionado se deseja adicionar outro item
+			Caso a resposta seja sim
+				Volta à adição de novo item
+			Caso contrário
+				Volta ao Acervo
+		Senão (item novo)
+			O sistema requisita uma confirmação
+			Se a resposta for confirma
+				O item é adicionado ao acervo
+			Senão
+				Volta à adição de novo item
+
+- Adiciona Exemplar:
+
+	Usuário tem acesso à sua Coleção
+	Escolhe adicionar um novo exemplar
+	Escolhe o tipo do exemplar
+	Escolhe o item associado
+	Se o item associado não está no sistema
+		Pede-se que o usuário faça o cadastro
+		Se o usuário não o fizer
+			Volta à adição de exemplar
+	Completa os atributos
+	Se forem inválidos (por exemplo, incompletos)
+		Preenche de novo
+	Caso contrário (válidos)
+		O sistema requere que se vincule uma negociação
+		Se nenhuma é vinculada
+			Volta à Coleção
+		O sistema requisita uma confirmação
+		Se a resposta for confirma
+			O item é adicionado à coleção com a negociação
+		Senão
+			Volta à adição de novo exemplar
+
+- Remove Exemplar:
+
+	Usuário tem acesso à sua Coleção
+	Escolhe remover um de seus exemplares
+	O sistema pede uma confirmação
+	Se confirma
+		As negociações associadas ao exemplar são removidas
+		O exemplar é removido
+	Se não for confirmado
+		Volta à sua Coleção
+
+- Remove Negociação:
+
+	Usuário tem acesso às suas negociações
+	Escolhe remover uma de suas negociações
+	O sistema pede uma confirmação
+	Se confirma
+		As negociações associadas são removidas
+	Se não for confirmado
+		Volta às suas negociações
+
