@@ -1,0 +1,26 @@
+Use case: Remover qualquer exemplar
+	O admin tem acesso à todos os exemplares.
+	Pode remover qualquer um.
+	Ao ser removido, o exemplar não estará mais no sistema.
+	Será possível selecionar vários de uma vez para remoção múltipla.
+	
+Use case: Remover qualquer negociação
+	O admin tem acesso à todos os exemplares e pode remover qualquer um.
+	Ao apagar, a negociação não estará mais ativa, nem para acesso para acesso futuro.
+	Será possível selecionar vários de uma vez para remoção múltipla.
+
+Use case: Remover qualquer item
+	O admin tem acesso à todos os itens.
+	Pode remover qualquer um.
+	Ao ser removido, todos os exemplares desse item serão removidos.
+	Será possível selecionar vários de uma vez para remoção múltipla. 
+
+Use case: Remover qualquer usuário
+	O admin tem acesso à todos os usuários.
+	Pode remover qualquer um.
+	Ao remover um usuário esse estará fora do sistema e não poderá fazer login.
+	Será possível selecionar vários de uma vez para remoção múltipla.
+	
+
+
+
