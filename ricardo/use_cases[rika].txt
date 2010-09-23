@@ -41,7 +41,6 @@ Na tela de adição de item:
                 Caso contrário, volta ao acervo.
             Se é realmente novo, o sistema requisita uma confirmação:
                 Caso seja confirmada, o item é adicionado ao acervo.
-                Caso contrário volta ao acervo.
-            Senão, volta ao acervo.
+                Caso contrário volta à adição de novo exemplar.
 
 *************************************************************************************
