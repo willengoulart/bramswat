@@ -18,7 +18,7 @@ Remove = Descadastra
 	O usuário se conecta ao sistema
 	Insere seu login e senha
 	Se forem válidos
-		ele consegue entrar na tela inicial do sistema
+		ele consegue entrar no sistema
 	Caso contrário
 		o sistema pede o login e a senha novamente
 
@@ -63,7 +63,7 @@ Remove = Descadastra
 			Volta à Coleção
 		O sistema requisita uma confirmação
 		Se a resposta for confirma
-			O item é adicionado à coleção com a negociação
+			O exemplar é adicionado à coleção com a negociação
 		Senão
 			Volta à adição de novo exemplar
 
