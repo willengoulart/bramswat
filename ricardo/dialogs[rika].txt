@@ -1,0 +1,116 @@
+***************************************************************
+Layout que eu adotei:
+
+nome do dialgo:
+- Mostra: "oq mostra de importante sem detalhes da interface"
+- "O que se pode fazer nesse dialogo"
+   ex: Ir para perfil de usuário
+- "O que 
+
+obs: as linhas nao precisam seguir uma ordem;
+     nem estar relacionado a uma unica tela;
+     nao tratei casos especiais.
+
+***************************************************************
+
+Glossário:
+username: nome ou apelido do usuário
+
+***************************************************************
+
+Contém:
+- Login
+- Logout
+- Busca
+- Cadastro de usuário
+- Perfil de usuário
+- Cadastro de negociação
+- Perfil de negociação
+- Cadastro de item
+- Perfil de item
+- Cadastro de exemplar
+- Perfil de exemplar
+
+***************************************************************
+
+DIÁLOGOS:
+
+Login:
+- Preencher username e senha
+- Entrar no sistema
+- Ir para perfil de usuário
+
+Logout: (em qualquer tela do sistema)
+- Sair do sistema
+
+Busca:
+- Escolher tipo da busca
+- Preecher campo para buscar pelo nome
+- Preecher dados adicionais para refinamento da busca
+- Mostra: resultado da busca
+- Ir para perfil de usuário
+- Ir para perfil de item
+- Ir para perfil de exemplar
+- Ir para perfil de negociação
+
+Cadastro de usuário:
+- Cancelar cadastro
+- Preencher dados pessoais
+- Aceitar ou não os termos de uso
+- Adicionar novo usuário no banco de dados
+
+Perfil de usuário:
+- Começar um processo de negociação com este usuário
+- Mostra: exemplares do usuário e suas respectivas negociações
+- Mostra: negociações em andamento feitas pelo usuário
+- Mostra: histórico de negociações do usuário
+- Ir para perfil de item
+- Ir para perfil de exemplar
+- Ir para perfil de negociação
+
+Perfil de negociação:
+- Mostra: item vinculado à negociação
+- Mostra: tipo da negociação
+- Mostra: dados sobre a negociação
+- Mostra: dono do exemplar da negociação
+- Ir para perfil do dono do exemplar vinculado
+- Começar um processo de uma negociação com o dono 
+
+Cadastro de negociação:
+- Cancelar cadastro
+- Mostra: item a ser vinculado à negociação
+- Escolher tipo de negociação
+- Preencher dados da negociação
+- Ir para perfil de negociação
+- Adicionar nova negociação no banco de dados
+
+Perfil de item:
+- Mostra: informações do item (nome, tipo e respectivos dados)
+- Mostra: os exemplares disponíveis do item e suas respectivas negociações
+- Ir para o perfil de um exemplar do item
+- Ir para o perfil de uma negociação de um exemplar
+
+Cadastro de item:
+- Cancelar cadastro
+- Escolher tipo do item a ser cadastrado
+- Preencher dados do item dependendo de seu tipo
+- Limpar os campos de dados
+- Adicionar novo item no banco de dados
+
+Perfil de exemplar:
+- Mostra: dono, estado do exemplar, e descrição
+- Mostra: informações sobre as negociações abertas do exemplar
+- Ir para o perfil do dono
+- Ir para perfil de uma negociação
+
+Cadastro de exemplar:
+- Cancelar cadastro
+- Preencher campos como estado e descrição exemplar
+- Vincular uma negociação
+- Mostra: entrada inválida
+- Mostra: confirmação do cadastro
+- Ir para cadastro de negociação
+- Adicionar novo exemplar no banco de dados
+
+
+***************************************************************

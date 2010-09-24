@@ -18,6 +18,7 @@ Use case: Remover qualquer item
 Use case: Remover qualquer usuário
 	O admin tem acesso à todos os usuários.
 	Pode remover qualquer um.
+        Todas os exemplares ligados à esse usuário serão removidos.
 	Ao remover um usuário esse estará fora do sistema e não poderá fazer login.
 	Será possível selecionar vários de uma vez para remoção múltipla.
 	
