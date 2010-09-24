@@ -1,0 +1,60 @@
+Root
+
+- Administrador modifica item.
+- Administrador modifica exemplar.
+- Administrador modifica negociação.
+- Administrador modifica usuário.
+
+Glossário:
+- logado: está dentro do sistema.
+
+Administrador modifica item:
+
+O administrador está logado no sistema.
+Na tela de Busca, o administrador faz a procura pelo item desejado.
+São mostradas as ocorrências do item:
+O item desejado é selecionado.
+O administrador faz as modificações desejadas nos campos de informações do item.
+O sistema pede uma confirmação das modificações:
+    Se aceita, o item é modificado com sucesso.
+    Caso contrário, volta para a tela de Busca.
+
+Administrador modifica exemplar:
+
+O administrador está logado no sistema.
+Na tela de Busca, o administrador faz a procura pelo item do exemplar desejado.
+São mostradas as ocorrências do item.
+O item do exemplar desejado é selecionado.
+São mostrados os exemplares do item.
+O exemplar desejado é selecionado.
+O administrador faz as modificações desejadas nos campos de informações do exemplar.
+O sistema pede uma confirmação das modificações:
+    Se aceita, o exemplar é modificado com sucesso.
+    Caso contrário, volta para a tela de Busca.
+
+Administrador modifica negociação:
+
+O administrador está logado no sistema.
+Na tela de Busca, o administrador faz a procura pelo item da negociação desejada.
+São mostradas as ocorrências do item.
+O item da negociação desejada é selecionado.
+São mostrados os exemplares do item.
+O exemplar da negociação desejada é selecionado.
+São mostradas as negociações do exemplar.
+A negociação desejada é selecionada.
+O administrador faz as modificações desejadas nos campos de informações da negociação.
+O sistema pede uma confirmação das modificações:
+    Se aceita, a negociação é modificada com sucesso.
+    Caso contrário, volta para a tela de Busca.
+
+Administrador modifica usuário:
+
+O administrador está logado no sistema.
+Na tela de Busca, o administrador faz a procura pelo usuário desejado.
+São mostradas as ocorrências de usuários:
+O usuário desejado é selecionado.
+O administrador faz as modificações desejadas nos campos de informações do usuário.
+O sistema pede uma confirmação das modificações:
+    Se aceita, o usuário é modificado com sucesso.
+    Caso contrário, volta para a tela de Busca.
+
