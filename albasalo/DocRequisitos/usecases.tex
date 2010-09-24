@@ -1,0 +1,200 @@
+\newcommand{\pgs}{\hspace{0.6cm}\=\hspace{0.5cm}\=\hspace{0.5cm}\=\hspace{0.5cm}\=\hspace{0.5cm}\=\hspace{0.5cm}\= \kill}
+
+\subsection{Use Cases}
+
+\subsubsection{Entra no sistema}
+\begin{tabbing}
+\pgs
+\>\>O usuário se conecta ao sistema.\\
+\>\>Insere seu login e senha.\\
+\>\>Se forem válidos,\\
+\>\>\>ele consegue entrar no sistema.\\
+\>\>Caso contrário,\\
+\>\>\>o sistema pede o login e a senha novamente.
+\end{tabbing}
+
+\subsubsection{Usuário adiciona Item}
+\begin{tabbing}
+\pgs
+\>\>Usuário tem acesso ao Acervo.\\
+\>\>Seleciona uma opção para adicionar um novo item.\\
+\>\>Escolhe o tipo do item.\\
+\>\>Completa os atributos.\\
+\>\>Se forem inválidos (por exemplo, incompletos),\\
+\>\>\>preenche de novo.\\
+\>\>Caso contrário (válidos),\\
+\>\>\>Se o item já existe,\\
+\>\>\>\>o usuário é avisado e questionado se deseja adicionar outro item.\\
+\>\>\>\>Caso a resposta seja sim,\\
+\>\>\>\>\>Volta à adição de novo item.\\
+\>\>\>\>Caso contrário,\\
+\>\>\>\>\>Volta ao Acervo.\\
+\>\>\>Senão (item novo),\\
+\>\>\>\>O sistema requisita uma confirmação.\\
+\>\>\>\>Se a resposta for confirma,\\
+\>\>\>\>\>O item é adicionado ao acervo.\\
+\>\>\>\>Senão,\\
+\>\>\>\>\>Volta à adição de novo item.
+\end{tabbing}
+
+\subsubsection{Usuário adiciona Exemplar}
+\begin{tabbing}
+\pgs
+\>\>Usuário tem acesso à sua Coleção.\\
+\>\>Escolhe adicionar um novo exemplar.\\
+\>\>Escolhe o tipo do exemplar.\\
+\>\>Escolhe o item associado.\\
+\>\>Se o item associado não está no sistema,\\
+\>\>\>Pede-se que o usuário faça o cadastro.\\
+\>\>\>Se o usuário não o fizer,\\
+\>\>\>\>Volta à adição de exemplar.\\
+\>\>Completa os atributos.\\
+\>\>Se forem inválidos (por exemplo, incompletos),\\
+\>\>\>Preenche de novo.\\
+\>\>Caso contrário (válidos)\\
+\>\>\>O sistema requere que se vincule uma negociação.\\
+\>\>\>Se nenhuma é vinculada,\\
+\>\>\>\>Volta à Coleção.\\
+\>\>\>O sistema requisita uma confirmação.\\
+\>\>\>Se a resposta for confirma,\\
+\>\>\>\>O exemplar é adicionado à coleção com a negociação.\\
+\>\>\>Senão,\\
+\>\>\>\>Volta à adição de novo exemplar.
+\end{tabbing}
+
+\subsubsection{Usuário remove Exemplar}
+\begin{tabbing}
+\pgs
+\>\>Usuário tem acesso à sua Coleção.\\
+\>\>Escolhe remover um de seus exemplares.\\
+\>\>O sistema pede uma confirmação.\\
+\>\>Se confirma,\\
+\>\>\>As negociações associadas ao exemplar são removidas,\\
+\>\>\>O exemplar é removido.\\
+\>\>Se não for confirmado,\\
+\>\>\>Volta à sua Coleção.
+\end{tabbing}
+
+\subsubsection{Usuário remove Negociação}
+\begin{tabbing}
+\pgs
+\>\>Usuário tem acesso às suas negociações.\\
+\>\>Escolhe remover uma de suas negociações.\\
+\>\>O sistema pede uma confirmação.\\
+\>\>Se confirma,\\
+\>\>\>A negociação é removida.\\
+\>\>Se não for confirmado,\\
+\>\>\>Volta às suas negociações.
+\end{tabbing}
+
+\subsubsection{Usuário busca por Item}
+\begin{tabbing}
+\pgs
+\>\>Um usuário logado no sistema tem acesso a uma interface de busca.\\
+\>\>O usuário deseja buscar por um Item.\\
+\>\>O usuário refina sua busca selecionando uma opção de buscar por Item do Acervo.\\
+\>\>O usuário preenche os ``campos'' da busca.\\
+\>\>O sistema efetua as pesquisas.\\
+\>\>Os resultados da pesquisa são exibidos para o usuário.
+\end{tabbing}
+
+\subsubsection{Usuário busca por Usuário}
+\begin{tabbing}
+\pgs
+\>\>Um usuário logado no sistema tem acesso a uma interface de busca.\\
+\>\>O usuário deseja buscar por um Usuário.\\
+\>\>O usuário refina sua busca selecionando uma opção de buscar por Usuário do Sistema.\\
+\>\>O usuário preenche os ``campos'' da busca.\\
+\>\>O sistema efetua as pesquisas.\\
+\>\>Os resultados da pesquisa são exibidos para o usuário.
+\end{tabbing}
+
+\subsubsection{Usuário visualiza o Perfil de um Usuário}
+\begin{tabbing}
+\pgs
+\>\>Um usuário logado no sistema deseja visualizar o perfil de um usuário.\\
+\>\>O usuário dá uma entrada que sinaliza ao sistema para mostrar o perfil de um
+usuário (clicar\\
+num botão ou algo parecido).\\
+\>\>O perfil do usuário é exibido na tela.
+\end{tabbing}
+
+\subsubsection{Usuário denuncia conteúdo impróprio}
+\begin{tabbing}
+\pgs
+\>\>O usuário logado, ao navegar pelo sistema, nota o cadastro de um item
+(ou exemplar) que, em\\
+sua opinião, tem um conteúdo impróprio.\\
+\>\>Ele marca-o como conteúdo impróprio.\\
+\>\>O sistema requisita uma confirmação.\\
+\>\>\>Caso o usuário confirme,\\
+\>\>\>\>o sistema envia uma notificação (e-mail) ao administrador sobre a ocorrência.\\
+\>\>\>\>O administrador do sistema decidirá o que será feito.\\
+\>\>\>Caso contrário,\\
+\>\>\>\>volta à tela em que o usuário estava.
+\end{tabbing}
+
+\subsubsection{Usuário pede ajuda}
+\begin{tabbing}
+\pgs
+\>\>O usuário, já logado no sistema, tem uma dúvida sobre o funcionamento do sistema.\\
+\>\>O usuário vai para a área de ajuda do sistema.\\
+\>\>O usuário envia sua dúvida ao sistema através do próprio canal de comunicação deste.\\
+\>\>O sistema envia uma notificação (e-mail) ao administrador com a dúvida.\\
+\>\>O administrador responde ao usuário através do canal de comunicação.
+\end{tabbing}
+
+\subsubsection{Administrador adiciona Item}
+\begin{tabbing}
+\pgs
+\>\>O administrador está dentro do sistema.\\
+\>\>Seleciona uma opção para adicionar um novo item dentro da tela do acervo.\\
+\>\>Na tela de adição de item:\\
+\>\>\>Escolhe o tipo do item,\\
+\>\>\>Completa atributos:\\
+\>\>\>\>Se eles não forem válidos, preenche de novo.\\
+\>\>\>\>Senão,\\
+\>\>\>\>\>Se o item já existe, o administrador é avisado e questionado.\\
+\>\>\>\>\>Se deseja adicionar outro item:\\
+\>\>\>\>\>\>Caso sim, volta à adição de item.\\
+\>\>\>\>\>\>Caso contrário, volta ao acervo.\\
+\>\>\>\>\>Se é realmente novo, o sistema requisita uma confirmação.\\
+\>\>\>\>\>\>Caso seja confirmada, o item é adicionado ao acervo.\\
+\>\>\>\>\>\>Caso contrário volta à adição de novo exemplar.\\
+\end{tabbing}
+
+\subsubsection{Administrador remove (qualquer) Item}
+\begin{tabbing}
+\pgs
+\>\>O administrador tem acesso a todos os itens.\\
+\>\>Pode remover qualquer um.\\
+\>\>Ao ser removido, todos os exemplares desse item serão removidos.\\
+\>\>Será possível selecionar vários de uma vez para remoção múltipla.
+\end{tabbing}
+
+\subsubsection{Administrador remove (qualquer) Exemplar}
+\begin{tabbing}
+\pgs
+\>\>O administrador tem acesso a todos os exemplares.\\
+\>\>Pode remover qualquer um.\\
+\>\>Ao ser removido, o exemplar não estará mais no sistema.\\
+\>\>Será possível selecionar vários de uma vez para remoção múltipla.
+\end{tabbing}
+
+\subsubsection{Administrador remove (qualquer) Negociação}
+\begin{tabbing}
+\pgs
+\>\>O administrador tem acesso a todos os exemplares e pode remover qualquer um.\\
+\>\>Ao apagar, a negociação não estará mais ativa, nem para acesso futuro.\\
+\>\>Será possível selecionar vários de uma vez para remoção múltipla.
+\end{tabbing}
+
+\subsubsection{Administrador remove (qualquer) Usuário}
+\begin{tabbing}
+\pgs
+\>\>O administrador tem acesso a todos os usuários.\\
+\>\>Pode remover qualquer um.\\
+\>\>\>Todos os exemplares ligados a esse usuário serão removidos.\\
+\>\>Ao remover um usuário, esse estará fora do sistema e não poderá fazer login.\\
+\>\>Será possível selecionar vários de uma vez para remoção múltipla.
+\end{tabbing}

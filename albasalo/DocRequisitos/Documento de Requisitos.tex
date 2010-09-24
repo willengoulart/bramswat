@@ -1,0 +1,41 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[tmargin=2.2cm, bmargin=2.2cm, lmargin=2.2cm, rmargin=2.2cm]{geometry}
+\usepackage[pdftex]{hyperref}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4} 
+
+\let\oldsection\section
+\renewcommand{\section}{\leftskip=0.0cm\oldsection}
+\let\oldsubsection\subsection
+\renewcommand{\subsection}{\leftskip=0.6cm\oldsubsection}
+\let\oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}{\leftskip=1.2cm\oldsubsubsection}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+\begin{document}
+
+\input{./title.tex}
+
+\tableofcontents
+\pagebreak
+
+\section{Introdução}
+
+\section{Definição de requisitos de usuário}
+
+\section{Arquitetura do sistema}
+
+\section{Requisitos de sistema}
+
+\section{Modelos}
+\input{./usecases.tex}
+
+\section{Glossário}
+
+\end{document}
